@@ -22,7 +22,7 @@ class MvTecDS(Dataset):
                     self.targets_name.append(c)
 
     def __getitem__(self, index):
-        image = Image.open(self.data[index]).convert('1')
+        image = Image.open(self.data[index]).convert('RGB')
         target = self.targets[index]
         if self.transform:
             image = self.transform(image)
