@@ -55,3 +55,7 @@ python train.py
 ## Future Work
 * More experiments with Convolutional Autoencoder
 * Evaluation on detection of anomalies
+
+## References
+* [The MVTec Anomaly Detection Dataset](https://www.mvtec.com/fileadmin/Redaktion/mvtec.com/company/research/datasets/mvtec_ad.pdf)
+[Bergmann et al., in: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 9584-9592, 2019]
