@@ -46,7 +46,7 @@ def create_gif(image_paths, output_path, duration=0.5, resolution=(128, 128)):
         
         images.append(img)
     
-    imageio.mimsave(output_path, images, duration=duration)
+    imageio.mimsave(output_path, images, duration=duration, loop=0)
 
 # Creating GIFs for each class
 for c in classes:
