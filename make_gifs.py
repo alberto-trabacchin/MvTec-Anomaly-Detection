@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 # Setting up paths and classes
 images_path = Path("./outputs")
 classes = [str(c.stem) for c in images_path.iterdir()]
-epochs = np.linspace(start=1, stop=200).astype(int)  # Generates 200 epochs from 1 to 200
+epochs = np.linspace(start=1, stop=100).astype(int)  # Generates 200 epochs from 1 to 200
 my_classes = ['bottle', 'zipper', 'capsule', 'transistor']
 
 images = {c: list(images_path.joinpath(c).iterdir()) for c in classes}
