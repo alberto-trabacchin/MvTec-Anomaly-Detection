@@ -14,6 +14,3 @@
     <td><img src="gifs/screw.gif" alt="Screw Demo" title="Capsule Demo" loop /></td>
   </tr>
 </table>
-
-
-<img src="gifs/screw.gif" alt="your_alternative_text" width=150 height=150 loop=infinite>
