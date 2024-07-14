@@ -39,7 +39,7 @@ python train.py
 --emb-dim <embedding_dimension>
 ```
 
-Default values used for training on an NVIDIA RTX 3080 are:
+Default values used for training on an NVIDIA RTX 3080 + i9-14900k are:
 ```bash
 python train.py
 --data-path <path_to_dataset>
