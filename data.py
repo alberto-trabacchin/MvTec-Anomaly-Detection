@@ -20,6 +20,13 @@ class MvTecDS(Dataset):
                     self.data.append(img)
                     self.targets.append(i)
                     self.targets_name.append(c)
+        else:
+            for i, c in enumerate(self.classes):
+                for defect in (self.data_path / c / 'test').iterdir():
+                    images = [img for img in defect.iterdir()]
+                    self.data.extend(images)
+                    self.targets.extend([i] * len(images))
+                    self.targets_name.extend([c] * len(images))
 
     def __getitem__(self, index):
         image = Image.open(self.data[index]).convert('RGB')
